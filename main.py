@@ -1,23 +1,27 @@
 import random
 
-name = input("What is your name" )
+name=input("What is your name? \n")
+print("\nHello "+ name)
 
-print("Hello " +  name)
+dayinfo=input("How was your day?\n")
 
-question1 = input("How was your day?")
+goodday_funktion=("Thats goood to hear","I am happy to hear that")
+badday_funktion=("Thats not so good, how can I help","I am sorry to hear that")
 
-yes_functions = [lambda: 'Thats butifull', lambda: 'That sounds great!']
-no_funktions = [lambda: 'I am sorry to hear that', lambda: 'Can I help?']
+if dayinfo == "good":
+    print(random.choice(goodday_funktion))
 
-question2 = input("Why?")
-question1.lower()
-if question2 == 'fun':
-        yes = random.choice(yes_functions)
-        print(yes())
-        pass
-if question2 == 'no':
-    no == random.choice(no_funktion)
-print(no())
-pass
+elif dayinfo == "bad":
+        print(random.choice(badday_funktion))
 
-question2 = ("Why?")
+highlite=input("What was your Highlite?\n")
+highliteanswer=input("Why was that your Highlite?\n")
+print("relatble!")
+
+downlite=input("What was your Downlite??\n")
+
+if downlite == "there was none" :
+    print("great to hear")
+
+else:
+    print("ahh I see why!")
